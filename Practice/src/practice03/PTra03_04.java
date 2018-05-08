@@ -32,7 +32,20 @@ public class PTra03_04 {
 		 *
 		 * ※ プログラムは何行書いても良いです
 		 */
+		int z = num;
+		int a = (num % 4);
+		int b = (num % 100);
+		int c = (num % 400);
 
+		if(c == 0){
+			System.out.println(z + "年はうるう年です。");
+		}else if(b == 0) {
+			System.out.println(z + "年はうるう年ではありません。");
+		}else if(a == 0){
+			System.out.println(z + "年はうるう年です。");
+		}else {
+			System.out.println(z + "年はうるう年ではありません。");
+		}
 
 	}
 }
